@@ -9,6 +9,10 @@ If you find this project helpful, please don't forget to give it a ⭐ Star to s
 🚩 News (2025.01) DADA has been accepted by ICLR 2025.
 
 <img src="figures/Fig1.jpg">
+  
+## Note
+
+The pre-training component of DADA is protected by intellectual property rights and is intended for commercial applications. As such, we are unable to disclose or release the code associated with the pre-training process.
 
 ## Requirements
 We run our project under Python 3.8. You can install the dependencies with the following command:
