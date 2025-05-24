@@ -11,7 +11,7 @@ class DADA(object):
 
     def _build_model(self):
         from transformers import AutoModel
-        model = AutoModel.from_pretrained(self.args.model, trust_remote_code=True)
+        model = AutoModel.from_pretrained(os.path.abspath(self.args.model), trust_remote_code=True)
         return model
 
     def _acquire_device(self):
