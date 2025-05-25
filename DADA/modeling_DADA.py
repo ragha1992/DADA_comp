@@ -10,7 +10,7 @@ import numpy as np
 
 
 class DADA(PreTrainedModel):
-    configs_class = DADAConfig
+    config_class = DADAConfig
 
     def __init__(self, config):
         super().__init__(config)
