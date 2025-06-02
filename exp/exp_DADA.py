@@ -69,6 +69,6 @@ class DADA(object):
         
         from ts_ad_evaluation import Evaluator
         evaluator = Evaluator(gt, test_scores, folder_path)
-        self.args.t = evaluator.find_thres(method='spot',init_score=init_scores,q=[0.001, 0.002])
+        self.args.t = evaluator.find_thres(method='spot',init_score=init_scores,q=[0.0001, 0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01])
         evaluator.evaluate(metrics=self.args.metric, affiliation=self.args.t)  
 
