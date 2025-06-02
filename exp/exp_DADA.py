@@ -66,6 +66,7 @@ class DADA(object):
         test_labels = np.concatenate(test_labels, axis=0).reshape(-1)
         test_labels = np.array(test_labels)
         gt = test_labels.astype(int)
+        np.save(folder_path + 'test_scores.npy', test_scores)
         
         from ts_ad_evaluation import Evaluator
         evaluator = Evaluator(gt, test_scores, folder_path)
